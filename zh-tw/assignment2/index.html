@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="zh-tw">
+
+    <meta name="author" content="牛博弘">
+    <meta name="description" content="Question 2 Solve 3 problems from the Euler Project using Python. Of the 3 problems, one must have been solved by fewer than 25,000 people, 1 fewer than 100,000 people and one fewer than 500,000 people. Write a function for each problem, and use nuympy-styple docstrings to annotate each function. Write a blog page describing your solutions and how you approached each problem.
+(Fewer than 500,000 people: 489,359) Problem 5 Smallest multiple 2520 is the smallest number that can be divided by eah of the numbers from 1 to 10 without any remainder.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Assignment2"/>
+<meta name="twitter:description" content="Question 2 Solve 3 problems from the Euler Project using Python. Of the 3 problems, one must have been solved by fewer than 25,000 people, 1 fewer than 100,000 people and one fewer than 500,000 people. Write a function for each problem, and use nuympy-styple docstrings to annotate each function. Write a blog page describing your solutions and how you approached each problem.
+(Fewer than 500,000 people: 489,359) Problem 5 Smallest multiple 2520 is the smallest number that can be divided by eah of the numbers from 1 to 10 without any remainder."/>
+
+    <meta property="og:title" content="Assignment2" />
+<meta property="og:description" content="Question 2 Solve 3 problems from the Euler Project using Python. Of the 3 problems, one must have been solved by fewer than 25,000 people, 1 fewer than 100,000 people and one fewer than 500,000 people. Write a function for each problem, and use nuympy-styple docstrings to annotate each function. Write a blog page describing your solutions and how you approached each problem.
+(Fewer than 500,000 people: 489,359) Problem 5 Smallest multiple 2520 is the smallest number that can be divided by eah of the numbers from 1 to 10 without any remainder." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pohung8411.github.io/zh-tw/assignment2/" />
+<meta property="og:site_name" content="博弘的部落格" />
+
+
+    
+      <base href="https://pohung8411.github.io/zh-tw/assignment2/">
+    
+    <title>
+  Assignment2 · 博弘的部落格
+</title>
+
+    
+      <link rel="canonical" href="https://pohung8411.github.io/zh-tw/assignment2/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://pohung8411.github.io/css/coder.min.0e5ce5b959a68dfe0232c6ddcec1e8ef154517c968464707f3181c437fe611c0.css" integrity="sha256-DlzluVmmjf4CMsbdzsHo7xVFF8loRkcH8xgcQ3/mEcA=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://pohung8411.github.io/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://pohung8411.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://pohung8411.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.74.3" />
+  </head>
+  
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://pohung8411.github.io/zh-tw">
+      博弘的部落格
+    </a>
+    
+      <span id="dark-mode-toggle" class="float-right">
+        <i class="fas fa-adjust fa-fw"></i>
+      </span>
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fas fa-bars fa-fw"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://pohung8411.github.io/zh-tw/about/">關於我</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://pohung8411.github.io/zh-tw/pastassignment/">已改過作業(仍然使用英文)</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://pohung8411.github.io/zh-tw/assignment2/">作業2(仍然使用英文)</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://pohung8411.github.io/zh-tw/experience/">研究專案</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://pohung8411.github.io/zh-tw/contact/">聯繫方式</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://pohung8411.github.io/assignment2/">English</a>
+              </li>
+            
+          
+        
+        <li class="navigation-item separator">
+          <span>|</span>
+        </li>
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Assignment2</h1>
+    </header>
+
+    <h2 id="question-2">Question 2</h2>
+<p>Solve 3 problems from the <a href="https://projecteuler.net/archives">Euler Project</a> using Python. Of the 3 problems, one must have been solved by fewer than 25,000 people, 1 fewer than 100,000 people and one fewer than 500,000 people. Write a function for each problem, and use <a href="https://numpydoc.readthedocs.io/en/latest/format.html"><code>nuympy</code>-styple docstrings</a> to annotate each function. Write a blog page describing your solutions and how you approached each problem.</p>
+<h2 id="fewer-than-500000-people-489359-problem-5-smallest-multiple">(Fewer than 500,000 people: 489,359) Problem 5 Smallest multiple</h2>
+<p>2520 is the smallest number that can be divided by eah of the numbers from 1 to 10 without any remainder.  <br>
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?</p>
+<h2 id="answer">Answer:</h2>
+<h3 id="result">Result:</h3>
+<p>232,792,560  </p>
+<h3 id="python-code">Python Code:</h3>
+<p><code>def gcd(x, y): return y and gcd(y, x % y) or x</code>
+<code>def lcm(x, y): return x * y / gcd(x, y)</code></p>
+<p><code>n = 1</code><br>
+<code>for i in range(1, 20):</code><br>
+          <code>n = lcm(n, i)</code><br>
+<code>print(n)</code></p>
+<h3 id="interpretation">Interpretation:</h3>
+<p>For the definition, we just write down functions for gcd and lcm. GCD is a function for finding the highest common factor. LCM is a function for finding the least common multiple.<br>
+The logic behind this code is that we start from n = 1 and try to run i in range from 1 to 21. To be specific, when i = 1, n = lcm(1, 1) = 1, so we print out 1 first. Then, when i = 2, n = lcm(1, 2) = 2, we print out 2. When i = 3, n = lcm(2, 3) = 6, we print out 6. When i = 4, n = lcm(4, 6) = 12, we print out 12. When i = 5, n = lcm(5, 12) = 60, we print out 60. By doing this repeately until i = 20, we can find out our answer 232, 792, 560. Actually, when we run the coding, it will print out all n during the process.
+1<br>
+2<br>
+6<br>
+12<br>
+60<br>
+60<br>
+420<br>
+840<br>
+2520<br>
+2520<br>
+27720<br>
+27720<br>
+360360<br>
+360360<br>
+360360<br>
+720720<br>
+12252240<br>
+12252240<br>
+232792560  (when i = 20)<br>
+So, our answer is 232, 792, 560.</p>
+<h3 id="reference">Reference:</h3>
+<p><a href="https://www.w3resource.com/python-exercises/challenges/1/python-challenges-1-exercise-37.php">https://www.w3resource.com/python-exercises/challenges/1/python-challenges-1-exercise-37.php</a></p>
+<h2 id="fewer-than-100000-people-92991-problem-34-digit-factorials">(Fewer than 100,000 people: 92,991) Problem 34 Digit factorials</h2>
+<p>145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.<br>
+Find the sum of all numbers which are equal to the sum of the factorial of their digits.<br>
+Note: As 1! = 1 and 2! = 2 are not sums they are not included.</p>
+<h2 id="answer-1">Answer:</h2>
+<h3 id="result-1">Result:</h3>
+<p>40,730</p>
+<h2 id="python-code-1">Python Code:</h2>
+<h3 id="first-step">first step</h3>
+<p><code>from math import factorial</code><br>
+<code>import time</code><br>
+<code>start = time.time()</code><br>
+<code>f = [factorial(0),</code><br>
+<code>factorial(2),</code><br>
+<code>factorial(3),</code><br>
+<code>factorial(4),</code><br>
+<code>factorial(5),</code><br>
+<code>factorial(6),</code><br>
+<code>factorial(7),</code><br>
+<code>factorial(8),</code><br>
+<code>factorial(9)]</code></p>
+<h3 id="second-step">second step</h3>
+<p><code>def factorial_digits(n):</code> <br>
+<code>s=0</code><br>
+<code>while n:</code><br>
+                <code>s += f[n%10]</code> (equal to s = s + f[n%10])  <br>
+                <code>n //= 10</code>   (equal to n = n // 10)<br>
+<code>return s</code></p>
+<h3 id="third-step">third step</h3>
+<p><code>solution = 0</code><br>
+<code>for i in range(10, 1854721):</code><br>
+          <code>if factorial_digits(i) == i:</code><br>
+                  <code>solution += i</code> (equal to solution = solution + i)</p>
+<h3 id="final-step">final step</h3>
+<p><code>print(solution)</code><br>
+<code>end = time.time()</code><br>
+<code>print(end - start)</code></p>
+<h2 id="interpretation-1">Interpretation:</h2>
+<p>For the first step, we just import the factorial function for calculating factorial and then import time module for calculating time of execution (Importing time is not necessary for finding the solution). The key part here is to find the factorials of numbers from 0-9. That is, 1!, 2!, 3!, 4!, 5!, 6!, 7!, 8!, 9!, which will be used later. We only need to find the factorials of one digit because the factorials of two digits are not needed in this question.</p>
+<p>For the second step, we need to make a definition for factorial_digits(n). This step is quite simple. We set s = 0 at first and n is the number we want to test. The formulas of s = s + f[n%10] and n = n // 10 help us return the factorial of every one-digit in n. This return will then be listed as s.</p>
+<p>For the third step, this might be a little tricky here. Setting solution = 0 is understandable. Setting the lower bound of 10 is also understandable because, except 1 and 2, the factorials of every one-digit do not equal to these one-digits themselves. However, we need to explain why we set our upper bound as 1,854,721 in this case.  If you are interested in this, you can refer to Factorion Wikipedia. But, I will briefly talk about the concept here. The concept is that if n is a natural number of d digits that is a factorion, then 10^(d-1) &lt;= n &lt;= 9!d. This fails to hold for d&gt;= 8, thus n has at most 7 digits, and the first upper bound we can find is 9,999,999. But the maximum sum of factorials of digits for a 7 digit number is 9!*7 = 2,540,160 establishing the second upper bound. Going further, 9!6 is 2,177,280, and the only 7 digit number not larger than 2,540,160 containing six 9&rsquo;s is 1,999,999, which is not a factorion by inspection. The next highest sum would be given by 1,999,998, yielding a third upper bound of 1,854,721. So, we can set our lower bound of 10 and upper bound of 1,854,721. If i in this range equal to factorial_digits(i), then we will add these i into our solution.</p>
+<p>For the final step, we just need to print our solution and we will get our result 40,730. The coding of print(end - start) is not necessary here, but it can help us know the total time of execution. For me, it is 349.1530570983887.</p>
+<h2 id="reference-1">Reference:</h2>
+<p><a href="https://radiusofcircle.blogspot.com/2016/05/problem-34-project-euler-solution-with.html">https://radiusofcircle.blogspot.com/2016/05/problem-34-project-euler-solution-with.html</a><br>
+<a href="http://radiusofcircle.blogspot.com">http://radiusofcircle.blogspot.com</a><br>
+<a href="http://www.scientificlib.com/en/Mathematics/LX/Factorion.html">http://www.scientificlib.com/en/Mathematics/LX/Factorion.html</a><br>
+<a href="https://en.wikipedia.org/wiki/Factorion">https://en.wikipedia.org/wiki/Factorion</a></p>
+<h2 id="fewer-than-25000-people-23318-problem-206-concealed-square">(Fewer than 25,000 people: 23,318) Problem 206 Concealed Square</h2>
+<p>Find the unique positive integer whose square has the form 1_2_3_4_5_6_7_8_9_0, where each “_” is a single digit.</p>
+<h2 id="answer-2">Answer:</h2>
+<h3 id="result-2">Result:</h3>
+<p>1389019170</p>
+<h3 id="python-code-2">Python Code:</h3>
+<p><code>def match(n):</code><br>
+<code>s = str(n)</code><br>
+<code>return not all(int(s[x*2]) == x + 1 for x in range(9))</code> <br>
+(this part just talks about the pattern in our topic 1_2_3_4_5_6_7_8_9)</p>
+<p><code>n = 138,902,663</code> (integer part of sqrt(19293949596979899))<br>
+(this part talks about the maximum possible number&rsquo;s round-down square root)</p>
+<p><code>while match(n*n):</code>
+<code>n -= 2</code> (equal to : n = n - 2)<br>
+(this part talks about we need to make our n*n fits the pattern 1_2_3_4_5_6_7_8_9. If not, we will let n = n - 2)</p>
+<p><code>print (&quot;Project Euler 206 Solution =&quot;, n*10)</code><br>
+(this part just prints the solution)</p>
+<h2 id="interpretation-2">Interpretation:</h2>
+<p>First, we need to observe that the square of any number, n, will end in 00 if the last digit of n is 0. With this observation, we can fill out the last gap of the topic&rsquo;s number. This number&rsquo;s form would be 1_2_3_4_5_6_7_8_900.</p>
+<p>Next, we can omit 00 and search for square root of 1_2_3_4_5_6_.7_8_9. We just need to add 0 after the solution we find at the end. For the number 1_2_3_4_5_6_.7_8_9, we can easily observe that the square of root for this number must be ending with 3 or 7, an odd number, and we can skip even-numbered n from consideration.</p>
+<p>The final step is to search with the maximum possible number, 19293949596979899, at the beginning. While its square root is not an integer, we round down it. This round-down integer is the largest possible square root. Starting with an odd number we count down this integer by 2 until the square fits our pattern. The result is 1389019170.</p>
+<h2 id="reference-2">Reference:</h2>
+<p><a href="https://blog.dreamshire.com/project-euler-206-solution/">https://blog.dreamshire.com/project-euler-206-solution/</a><br>
+<a href="https://helloacm.com/bruteforce-algorithm-to-find-the-unique-positive-integer-whose-square-has-the-form-1_2_3_4_5_6_7_8_9_0-concealed-square/">https://helloacm.com/bruteforce-algorithm-to-find-the-unique-positive-integer-whose-square-has-the-form-1_2_3_4_5_6_7_8_9_0-concealed-square/</a><br>
+<a href="https://zach.se/project-euler-solutions/206/">https://zach.se/project-euler-solutions/206/</a><br>
+<a href="https://euler.stephan-brumme.com/206/">https://euler.stephan-brumme.com/206/</a><br>
+<a href="https://medium.com/theburningmonk-com/project-euler-problem-206-solution-4a4386d7aee5">https://medium.com/theburningmonk-com/project-euler-problem-206-solution-4a4386d7aee5</a></p>
+
+  </article>
+</section>
+
+  
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>歡迎來到我的部落格</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         牛博弘 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+      
+      <script src="https://pohung8411.github.io/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain=”example.com” src=”https://analytics.example.com/js/index.js”></script> 
+
+
+  </body>
+
+</html>

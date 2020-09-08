@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博弘的部落格</title>
+    <link>https://pohung8411.github.io/zh-tw/</link>
+    <description>Recent content on 博弘的部落格</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://pohung8411.github.io/zh-tw/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Assignment 1</title>
+      <link>https://pohung8411.github.io/zh-tw/posts/assignment-1/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/zh-tw/posts/assignment-1/</guid>
+      <description>Question 1 Start a personal website on GitHub Pages using a static site generator such as pelican or hugo. You can find tutorials for how to do on the web. This will be your data science project portfolio. The first project in your portfolio is to write a blog describing how you did this exercise.
+Answer: STEP 1. Installation Install Hugo
+brew install hugo
+hugo version
+Install Git
+git &amp;ndash;version</description>
+    </item>
+    
+    <item>
+      <title>Assignment2</title>
+      <link>https://pohung8411.github.io/zh-tw/assignment2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/zh-tw/assignment2/</guid>
+      <description>Question 2 Solve 3 problems from the Euler Project using Python. Of the 3 problems, one must have been solved by fewer than 25,000 people, 1 fewer than 100,000 people and one fewer than 500,000 people. Write a function for each problem, and use nuympy-styple docstrings to annotate each function. Write a blog page describing your solutions and how you approached each problem.
+(Fewer than 500,000 people: 489,359) Problem 5 Smallest multiple 2520 is the smallest number that can be divided by eah of the numbers from 1 to 10 without any remainder.</description>
+    </item>
+    
+    <item>
+      <title>PastAssignment</title>
+      <link>https://pohung8411.github.io/zh-tw/pastassignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/zh-tw/pastassignment/</guid>
+      <description>Question 1 Start a personal website on GitHub Pages using a static site generator such as pelican or hugo. You can find tutorials for how to do on the web. This will be your data science project portfolio. The first project in your portfolio is to write a blog describing how you did this exercise.
+Answer: STEP 1. Installation Install Hugo
+brew install hugo
+hugo version
+Install Git
+git --version</description>
+    </item>
+    
+    <item>
+      <title>相關經驗</title>
+      <link>https://pohung8411.github.io/zh-tw/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/zh-tw/experience/</guid>
+      <description>杜克大學, 福庫商學院 德罕, 美國 研究助理 (指導教授: Victor Bennett &amp;amp; Rahul Gupta) 03/2020 - 08/3030
+・收集美國50州相關就業資料並配對整合以研究美國的就業潛能
+台灣經濟研究院 (台灣前三大經濟研究機構) 台北, 台灣 總體經濟研究實習 8.5 小時/ 每日 01/2019 - 02/2019
+・分析中小企業創新投資的可行性
+・學習如何評估新科技的盈利模式(生物科技, 藥學科技等等)
+・評估不同政府政策的表現以及對台灣的適用性
+國立臺北大學 台北, 台灣** 研究助理 8 小時/ 每兩個月 09/2018 - 06/2019
+・為經濟學系收集相關資料並且進行研究分析以及補足數學知識以及統計技能
+台灣合作金庫銀行 (台灣前兩大金融銀行) 台北, 台灣 金融分析實習 40 小時/ 每週 07/2016 - 09/2016
+・支票整理過帳以及觀察分析匯率波動
+・評估不同保險方案的盈利可行性
+・學習外匯交易模式以及反詐騙投資的程序模式</description>
+    </item>
+    
+    <item>
+      <title>聯繫方式</title>
+      <link>https://pohung8411.github.io/zh-tw/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/zh-tw/contact/</guid>
+      <description>個人郵件: slhs01301@gmail.com
+學校郵件: pn83@duke.edu
+臉書: https://www.facebook.com/?ref=tn_tnmn
+領英: https://www.linkedin.com/feed/
+若有任何疑問，歡迎藉由上述聯繫方式聯繫我，感謝</description>
+    </item>
+    
+    <item>
+      <title>關於博弘</title>
+      <link>https://pohung8411.github.io/zh-tw/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/zh-tw/about/</guid>
+      <description>我的名字叫牛博弘，目前是分析政治經濟學碩士的二年級生；我的興趣包含了金融計量，貨幣經濟，以及銀行學。由於科技的迅速發展，學習如何使用數據科學分析經濟現象以及金融問題變得十分重要；因此，這也是為何我選擇上生物統計學823課程，在這門課之後，我希望自己能真正地學會如何使用電腦技術來解決經濟及金融問題，很高興在這堂課遇到大家，也很開心可以跟大家一起在生物統計學823課程學習。</description>
+    </item>
+    
+  </channel>
+</rss>

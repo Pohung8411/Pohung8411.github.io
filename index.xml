@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Po-Hung&#39;s Blog</title>
+    <link>https://pohung8411.github.io/</link>
+    <description>Recent content on Po-Hung&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://pohung8411.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Assignment 1</title>
+      <link>https://pohung8411.github.io/posts/assignment-1/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/posts/assignment-1/</guid>
+      <description>Question 1 Start a personal website on GitHub Pages using a static site generator such as pelican or hugo. You can find tutorials for how to do on the web. This will be your data science project portfolio. The first project in your portfolio is to write a blog describing how you did this exercise.
+Answer: STEP 1. Installation Install Hugo
+brew install hugo
+hugo version
+Install Git
+git &amp;ndash;version</description>
+    </item>
+    
+    <item>
+      <title>About Po-Hung</title>
+      <link>https://pohung8411.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/about/</guid>
+      <description>My name is Po-Hung Niu, a second year master student in M.A. in Analytical Political Economy. My academic interests lie in financial econometrics, monetary economics, and banking. As the technology develops by leaps and bounds, it is necessary for me to combine the knowledge of data science into economics and finance. So, this is why I am taking this class. After this class, I hope I will be able to deal with the financial problems with handy computer skills.</description>
+    </item>
+    
+    <item>
+      <title>Assignment2</title>
+      <link>https://pohung8411.github.io/assignment2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/assignment2/</guid>
+      <description>Question 2 Solve 3 problems from the Euler Project using Python. Of the 3 problems, one must have been solved by fewer than 25,000 people, 1 fewer than 100,000 people and one fewer than 500,000 people. Write a function for each problem, and use nuympy-styple docstrings to annotate each function. Write a blog page describing your solutions and how you approached each problem.
+(Fewer than 500,000 people: 489,359) Problem 5 Smallest multiple 2520 is the smallest number that can be divided by eah of the numbers from 1 to 10 without any remainder.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://pohung8411.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/contact/</guid>
+      <description>Personal email: slhs01301@gmail.com
+Institution email: pn83@duke.edu
+Facebook: https://www.facebook.com/?ref=tn_tnmn
+Linkedin: https://www.linkedin.com/feed/
+Please feel free to send me email (messenger) if there is any problem</description>
+    </item>
+    
+    <item>
+      <title>First snippet</title>
+      <link>https://pohung8411.github.io/snippets/first/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/snippets/first/</guid>
+      <description>This content is in snippets/first/index.md
+pwd </description>
+    </item>
+    
+    <item>
+      <title>PastAssignment</title>
+      <link>https://pohung8411.github.io/pastassignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/pastassignment/</guid>
+      <description>Question 1 Start a personal website on GitHub Pages using a static site generator such as pelican or hugo. You can find tutorials for how to do on the web. This will be your data science project portfolio. The first project in your portfolio is to write a blog describing how you did this exercise.
+Answer: STEP 1. Installation Install Hugo
+brew install hugo
+hugo version
+Install Git
+git --version</description>
+    </item>
+    
+    <item>
+      <title>Professional Experience</title>
+      <link>https://pohung8411.github.io/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/experience/</guid>
+      <description>Duke University, Fuqua School of Business Durham, US Research Assistant for Prof. Victor Bennett &amp;amp; Rahul Gupta 03/2020 - present
+・Collecting warn data about employees for 50 states in the United States
+・Matching data with needed information to discover the employment potential research
+Taiwan Institute of Economic Research (Top 3 Institute in TWN) Taipei, Taiwan Macroeconomist Research Intern 8.5 hours/ per day 01/2019 - 02/2019
+・Analyzed the feasibility of innovating investment (Small and Medium Enterprises)</description>
+    </item>
+    
+    <item>
+      <title>Second snippet</title>
+      <link>https://pohung8411.github.io/snippets/second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/snippets/second/</guid>
+      <description>This content is in snippets/second/index.md
+ls -la </description>
+    </item>
+    
+  </channel>
+</rss>

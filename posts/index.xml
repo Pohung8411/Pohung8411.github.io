@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Po-Hung&#39;s Blog</title>
+    <link>https://pohung8411.github.io/posts/</link>
+    <description>Recent content in Posts on Po-Hung&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://pohung8411.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Assignment 1</title>
+      <link>https://pohung8411.github.io/posts/assignment-1/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pohung8411.github.io/posts/assignment-1/</guid>
+      <description>Question 1 Start a personal website on GitHub Pages using a static site generator such as pelican or hugo. You can find tutorials for how to do on the web. This will be your data science project portfolio. The first project in your portfolio is to write a blog describing how you did this exercise.
+Answer: STEP 1. Installation Install Hugo
+brew install hugo
+hugo version
+Install Git
+git &amp;ndash;version</description>
+    </item>
+    
+  </channel>
+</rss>
