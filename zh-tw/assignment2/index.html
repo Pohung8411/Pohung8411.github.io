@@ -157,8 +157,35 @@ What is the smallest positive number that is evenly divisible by all of the numb
 <h3 id="result">Result:</h3>
 <p>232,792,560  </p>
 <h3 id="python-code">Python Code:</h3>
-<p><code>def gcd(x, y): return y and gcd(y, x % y) or x</code>
-<code>def lcm(x, y): return x * y / gcd(x, y)</code></p>
+<p><code>def gcd(x, y):</code><br>
+          &lsquo;&lsquo;&lsquo;finding the greatest common divisor of x and y</p>
+<p>          Args:<br>
+                  x (int) : any integer<br>
+                  y (int) : any integer<br>
+                  The inputs that will be operated on by &lsquo;gcd&rsquo;</p>
+<p>          Returns:<br>
+                  the greatest common divisor of x and y (integer)</p>
+<p>          Example:<br>
+                 suppose that we input x = 20, y = 15, we know the y does equal to 0. So, we will return gcd (y, x % y), that is gcd (15, 5), and now our x = 15, y = 5. We then input x = 15, y = 5 into the gcd function. Again, y does not equal to 0. So, we will return gcd(y, x % y), that is gcd(5, 0), and now our x = 5, y = 0. We then input x = 5, y =0 into the gcd function. At this step, we figure out our y does equal to 0, so our gcd function will return us 5. As a result, 5 is the greatest common divisor of 20 and 15.</p>
+<p>          &rsquo;&rsquo;&rsquo;<br>
+          #gcd(x, y)<br>
+          <code>if y == 0:</code><br>
+                  <code>return x</code><br>
+          <code>else:</code><br>
+                  <code>return gcd(y, x % y)</code></p>
+<p><code>def lcm(x, y):</code><br>
+          &lsquo;&lsquo;&lsquo;finding the least common multiple of x and y</p>
+<p>          Args:<br>
+                  x (int) : any integer <br>
+                  y (int) : any integer <br>
+                  The inputs that will be operated on by &lsquo;lcm&rsquo;</p>
+<p>          Returns:<br>
+                  the least common multiple of x and y (integer)</p>
+<p>          Example:<br>
+                 Here, we just use the mathematical fact, the product of two integers equals the product of their greatest common divisor and least common multiple. So, we can find out that x and y&rsquo;s least common multiple equals to their product divided by their greatest common factor. We can list an example to explain this. Suppose our x = 20 and y = 15. From above, we know their greatest common divisor is 5. So, we can easily find out that their least common multiple equals to (20*15) / 5 = 60. SO, their least common multiple equals to 60.</p>
+<p>'&rsquo;&rsquo;<br>
+#lcm(x, y)<br>
+<code>return x * y / gcd(x, y)</code></p>
 <p><code>n = 1</code><br>
 <code>for i in range(1, 20):</code><br>
           <code>n = lcm(n, i)</code><br>
@@ -201,7 +228,8 @@ Note: As 1! = 1 and 2! = 2 are not sums they are not included.</p>
 <code>import time</code><br>
 <code>start = time.time()</code><br>
 <code>f = [factorial(0),</code><br>
-<code>factorial(2),</code><br>
+<code>factorial(1),</code><br>
+<code>factorial(2),</code> <br>
 <code>factorial(3),</code><br>
 <code>factorial(4),</code><br>
 <code>factorial(5),</code><br>
@@ -211,6 +239,16 @@ Note: As 1! = 1 and 2! = 2 are not sums they are not included.</p>
 <code>factorial(9)]</code></p>
 <h3 id="second-step">second step</h3>
 <p><code>def factorial_digits(n):</code> <br>
+          &lsquo;&lsquo;&lsquo;finding the factorial of every one-digit in n</p>
+<p>          Args:<br>
+                  n (int) : any integer<br>
+                  The inputs that will be operated on by &lsquo;factorial_digits&rsquo;</p>
+<p>          Returns:<br>
+                  the factorial of every one-digit in n (integer)</p>
+<p>          Example:<br>
+                 this might be a little abstract, so I will take an example. Suppose n is 359, what is the factorial of every one-digit in this number? We can use the function below. First, we set s to 0 and then we make s = s + f[359%10] = s + f[9]. Calculated by the built-in function, we can know what value of 9! is (362,880). Then, we let n = 359 // 10, which returns 35 as a result. Then, we return to the while function and find s = 362,880 + f[35%10] = 362,880 + f[5]. Calculated by the build-in function, we can know what value of 5! is (120). Then, we let n = 35 // 10, which returns 3 as a result. Again, we return to the while function and find s = 363,000 + f[3%10] = 363,000 + f[3]. Calculated by the build-in function, we can know what value of 3! is (6). Then, we let n =3 // 10, which returns 0 as a result. Then, this funciton will return our s number 362,880 + 120 + 6 = 363,006, which is the factorial of every one-digit in 359.</p>
+<p>'&rsquo;&rsquo;<br>
+#factorial_digits(n)<br>
 <code>s=0</code><br>
 <code>while n:</code><br>
                 <code>s += f[n%10]</code> (equal to s = s + f[n%10])  <br>
@@ -242,16 +280,26 @@ Note: As 1! = 1 and 2! = 2 are not sums they are not included.</p>
 <p>1389019170</p>
 <h3 id="python-code-2">Python Code:</h3>
 <p><code>def match(n):</code><br>
+          &lsquo;&lsquo;&lsquo;defining the pattern 1_2_3_4_5_6_7_8_9 in our topic</p>
+<p>          Args:<br>
+                  n (int) : any integer<br>
+                  The inputs that will be operated on by &lsquo;match&rsquo;</p>
+<p>          Returns:<br>
+                  Boolean value (True or False)</p>
+<p>          Example:<br>
+           We can just take 19293949596979899, the square of 138902663, as our example. Firstly, we let 19293949788491569 as string &lsquo;19293949788491569&rsquo;. Then, we need to figure out whether int(s[0]) == 1, int(s[2]) == 2, &hellip;., int(s[16]) == 9. If one of them does not, the boolean value will be False. In our example, it is False because int(s[8]) does not equal 5. And then we use return not function. This means if our answer is False, it will return True. if our answer is True, it will return False. So, if we input 19293949788491569, it will return True.</p>
+<p>'&rsquo;&rsquo;<br>
+#Boolean value: True = not fit the pattern, False = fits the pattern<br>
 <code>s = str(n)</code><br>
-<code>return not all(int(s[x*2]) == x + 1 for x in range(9))</code> <br>
-(this part just talks about the pattern in our topic 1_2_3_4_5_6_7_8_9)</p>
+<code>return not all(int(s[x*2]) == x + 1 for x in range(9)))</code> <br>
+(So, this definition just talks about the pattern in our topic 1_2_3_4_5_6_7_8_9)</p>
 <p><code>n = 138,902,663</code> (integer part of sqrt(19293949596979899))<br>
 (this part talks about the maximum possible number&rsquo;s round-down square root)</p>
 <p><code>while match(n*n):</code>
 <code>n -= 2</code> (equal to : n = n - 2)<br>
-(this part talks about we need to make our n*n fits the pattern 1_2_3_4_5_6_7_8_9. If not, we will let n = n - 2)</p>
-<p><code>print (&quot;Project Euler 206 Solution =&quot;, n*10)</code><br>
-(this part just prints the solution)</p>
+<code>else:</code>
+<code>print (&quot;Project Euler 206 Solution =&quot;, n*10)</code><br>
+(this part talks about we need to make our n*n fits the pattern 1_2_3_4_5_6_7_8_9. if match(n * n) returns true, which means some numbers do not fit the pattern, we will let n = n - 2. Until match(n * n) = False, which means all numbers fit the pattern, we print out our answer. Finally, don&rsquo;t forget to add the number 0 behind this answer, which was found at the beginning of the practice.)</p>
 <h2 id="interpretation-2">Interpretation:</h2>
 <p>First, we need to observe that the square of any number, n, will end in 00 if the last digit of n is 0. With this observation, we can fill out the last gap of the topic&rsquo;s number. This number&rsquo;s form would be 1_2_3_4_5_6_7_8_900.</p>
 <p>Next, we can omit 00 and search for square root of 1_2_3_4_5_6_.7_8_9. We just need to add 0 after the solution we find at the end. For the number 1_2_3_4_5_6_.7_8_9, we can easily observe that the square of root for this number must be ending with 3 or 7, an odd number, and we can skip even-numbered n from consideration.</p>
