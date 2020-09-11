@@ -166,7 +166,7 @@ What is the smallest positive number that is evenly divisible by all of the numb
 <p>          Returns:<br>
                   the greatest common divisor of x and y (integer)</p>
 <p>          Example:<br>
-                 suppose that we input x = 20, y = 15, we know the y does equal to 0. So, we will return gcd (y, x % y), that is gcd (15, 5), and now our x = 15, y = 5. We then input x = 15, y = 5 into the gcd function. Again, y does not equal to 0. So, we will return gcd(y, x % y), that is gcd(5, 0), and now our x = 5, y = 0. We then input x = 5, y =0 into the gcd function. At this step, we figure out our y does equal to 0, so our gcd function will return us 5. As a result, 5 is the greatest common divisor of 20 and 15.</p>
+                 suppose that we input x = 20, y = 15, we know that y does not equal to 0. So, we will return gcd (y, x % y), that is gcd (15, 5), and now our x = 15, y = 5. We then input x = 15, y = 5 into the gcd function. Again, y does not equal to 0. So, we will return gcd(y, x % y), that is gcd(5, 0), and now our x = 5, y = 0. We then input x = 5, y =0 into the gcd function. At this step, we figure out our y does equal to 0, so our gcd function will return us 5. As a result, 5 is the greatest common divisor of 20 and 15.</p>
 <p>          &rsquo;&rsquo;&rsquo;<br>
           #gcd(x, y)<br>
           <code>if y == 0:</code><br>
